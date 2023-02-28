@@ -5,7 +5,7 @@ This repository is to write a button click based password generator that takes i
 
 ## Usage
 This repository is used as a random password generator in whole as is by user opening the HTML file into a web browser when ever teh user needs a password.
-[Deployed application]()
+[Deployed application](https://vrich88.github.io/MVR-bootcamp-challenge-3/)
 User clicks the "Generate Password" button and is prompted with requests for inputs to choose the factors that make up the parameters of the random password.
 
 If user fails to meet minimum required inputs of a numeric based length between 8 & 128 characters and at least one character type from lower case, upper case, numbers and/or special characters; the user is alerted with an error message resetting the prompt request and telling the user to start over with clicking the button.
