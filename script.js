@@ -31,8 +31,8 @@ function generatePassword() {
     /* start asking for password length when generate button is initially pressed */
     askLength = prompt("Select between 8 and 128 characters for password length:"); {
     /* checks for a length value between 8 & 128 character or if criteria not met then rephrases prompt */
-    } if (askLength < 8 || askLength > 128) {
-        askLength = prompt("Required Value! You must enter a numeric value between 8 and 128 characters for password length; or no password will be generated!")
+    } if (isNaN(askLength) || askLength < 8 || askLength > 128) {
+        askLength = alert("Required Value! You must enter a numeric value between 8 and 128 characters for password length; or no password will be generated!")
     /* function continues with valid user input to confirm use of lowers, uppers, numbers, and/or special characters */
     } else {
         askLowers = confirm("Do you want lower case characters?");
@@ -103,6 +103,6 @@ function generatePassword() {
     /* combine the randomly selected characters in passParts to create the password variable to returned on the HTML file */
     var password = passHolder.join("");
         /* console log to verify the generated password that shows up on HTML page */
-        console.log("Your generated password is:  " + password);
+        console.log("Your randomly generated password is:  " + password);
     return password;
 }
